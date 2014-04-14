@@ -1,0 +1,28 @@
+<script id="tmpl-GroupCreate" type="text/html">
+	<div class="GroupCreate">
+	</div>
+	<div class="GroupCreate-DialogPrompt">
+		<div class="form-horizontal">
+			<legend>Create Group</legend>
+			<div class="control-group">
+				<label class="control-label" >Group Name:</label>
+					<div class="controls">
+						<input groupId="{{#if group}}{{group.id}}{{/if}}" id="groupName" type="text" value="{{#if group}}{{group.groupName}}{{/if}}" />
+						<span id="groupHelpText" class="help-block"></span>
+	    			</div>
+			</div>
+			
+			<div class="form-actions">
+			
+			{{#if group}}
+				<button type="button" class="btn update">update</button>
+			{{else}}
+				<button type="button" class="btn add">add</button>
+			{{/if}}
+				<button type="button" class="btn cancel">Cancel</button>
+			</div>
+						
+	 	</div>
+	</div>
+	
+</script>  

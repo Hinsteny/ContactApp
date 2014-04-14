@@ -1,0 +1,25 @@
+<script id="tmpl-GroupView" type="text/html">
+	<div class="GroupView">
+		<h2>Group</h2>
+		
+		<table class="table">
+			<tr>
+				<th>name</th>
+				<th><button class="add btn">Add Group</button></th>
+			</tr>
+			
+			
+			{{#each groupList}}
+			<tr data-group-id="{{id}}">
+			 	<td>{{groupName}}</td>
+	    		<td>
+	    			<button class="edit btn">Edit</button>
+					<button class="delete btn">Delete</button>
+	    		</td>
+	    	</tr>
+    		{{/each}}
+			
+			
+		</table>
+	</div>
+</script>  

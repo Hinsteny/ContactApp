@@ -1,0 +1,37 @@
+<script id="tmpl-ContactCreate" type="text/html">
+	<div class="ContactCreate">
+	</div>
+	<div class="ContactCreate-DialogPrompt">
+		<div class="form-horizontal">
+			<legend>Create Contact</legend>
+			
+			<div class="control-contact">
+				<label class="control-label" >First Name:</label>
+					<div class="controls">
+						<input contactId="{{#if contact}}{{contact.id}}{{/if}}" id="firstName" type="text" value="{{#if contact}}{{contact.firstName}}{{/if}}" />
+						<span id="firstNameHelpText" class="help-block"></span>
+	    			</div>
+			</div>
+			
+			<div class="control-contact">
+				<label class="control-label" >Last Name:</label>
+					<div class="controls">
+						<input id="lastName" type="text" value="{{#if contact}}{{contact.lastName}}{{/if}}" />
+						<span id="lastNameHelpText" class="help-block"></span>
+	    			</div>
+			</div>
+			
+			<div class="form-actions">
+			
+			{{#if contact}}
+				<button type="button" class="btn update">update</button>
+			{{else}}
+				<button type="button" class="btn add">add</button>
+			{{/if}}
+				<button type="button" class="btn cancel">Cancel</button>
+			</div>
+						
+	 	</div>
+	</div>
+	
+</script>  

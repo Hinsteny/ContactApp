@@ -1,0 +1,45 @@
+<script id="tmpl-UserCreate" type="text/html">
+	<div class="UserCreate">
+	</div>
+	<div class="UserCreate-DialogPrompt">
+		<div class="form-horizontal">
+			<legend>Create User</legend>
+			
+			<div class="control-User">
+				<label class="control-label" >User Name:</label>
+					<div class="controls">
+						<input userId="{{#if user}}{{user.id}}{{/if}}" id="userName" type="text" value="{{#if user}}{{user.userName}}{{/if}}" />
+						<span id="userNameHelpText" class="help-block"></span>
+	    			</div>
+			</div>
+			
+			<div class="control-User">
+				<label class="control-label" >User PassWord:</label>
+					<div class="controls">
+						<input id="userPassword" type="text" value="{{#if user}}{{user.userPassword}}{{/if}}" />
+						<span id="userPasswordHelpText" class="help-block"></span>
+	    			</div>
+			</div>
+			
+			<div class="control-User">
+				<label class="control-label" >User SEX:</label>
+					<div class="controls">
+						<input id="userSex" type="text" value="{{#if user}}{{user.userSex}}{{/if}}" />
+						<span id="userSexHelpText" class="help-block"></span>
+	    			</div>
+			</div>
+			
+			<div class="form-actions">
+			
+			{{#if user}}
+				<button type="button" class="btn update">update</button>
+			{{else}}
+				<button type="button" class="btn add">add</button>
+			{{/if}}
+				<button type="button" class="btn cancel">Cancel</button>
+			</div>
+						
+	 	</div>
+	</div>
+	
+</script>  

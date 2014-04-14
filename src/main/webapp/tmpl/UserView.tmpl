@@ -1,0 +1,26 @@
+<script id="tmpl-UserView" type="text/html">
+	<div class="UserView">
+		<h1>User List</h1>
+		<table class="table">
+			<tr>
+				<th>user name</th>
+				<th>user password</th>
+				<th>sex</th>
+				<th><button class="add btn">Add User</button></th>
+			</tr>
+			
+			{{#each userList}}
+			<tr data-user-id="{{id}}">
+			 	<td>{{userName}}</td>
+			 	<td>{{userPassword}}</td>
+			 	<td>{{userSex}}</td>
+	    		<td>
+	    			<button class="edit btn">Edit</button>
+					<button class="delete btn">Delete</button>
+	    		</td>
+	    	</tr>
+    		{{/each}}
+			
+		</table>
+	</div>
+</script>  

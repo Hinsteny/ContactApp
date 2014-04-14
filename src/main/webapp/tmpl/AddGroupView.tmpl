@@ -1,0 +1,26 @@
+<script id="tmpl-AddGroupView" type="text/html">
+<div>
+	<div class="AddGroupView">
+	</div>
+	
+	<div class="AddGroupView-DialogPrompt" >
+		<div class="form-horizontal">
+			<legend data-contact-id="{{contactId}}">Add Group</legend>
+			
+			{{#each groupList}}
+				<label class="checkbox" >
+	      			<input type="checkbox" groupId="{{id}}" />{{groupName}}
+				</label>
+    		{{/each}}
+			
+			{{#unless groupList}}
+				<p class='text-error'>no group to add</p>
+			{{/unless}}
+			<div class="form-actions">
+				<button type="button" class="btn setGroup">update</button>
+				<button type="button" class="btn cancel">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>
+</script>  

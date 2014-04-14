@@ -1,0 +1,40 @@
+.AddGroupView {
+	position:absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity:0.4;
+	z-index:2;
+}
+.AddGroupView-DialogPrompt {
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin-left: -250px;
+	width: 500px;
+	background: white;
+	color:black;
+	z-index:3;
+	opacity:1;
+}
+
+.AddGroupView-DialogPrompt .form-actions {
+	clear:both;
+	margin:0px;
+}
+
+.AddGroupView-DialogPrompt legend {
+	width:480px;
+	padding:10px;
+}
+
+.AddGroupView-DialogPrompt label{
+	width:50px;
+	float:left;
+	margin-left:10px;
+}
+
+.AddGroupView-DialogPrompt .text-error {
+	text-align:center;
+}
