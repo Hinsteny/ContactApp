@@ -1,4 +1,4 @@
-package com.example.contactapp.dao;
+package com.hinsteny.SunSnow.dao;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,8 +6,9 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import com.example.contactapp.entity.User;
+
 import com.google.inject.Singleton;
+import com.hinsteny.SunSnow.entity.User;
 
 @Singleton
 public class UserDao {
@@ -21,7 +22,6 @@ public class UserDao {
 			// TODO Auto-generated method stub
 			return (int) (o1.getId() - o2.getId());
 		}
-
 	};
 
 	public Map<Long, User> getUserStore() {

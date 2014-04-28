@@ -1,4 +1,4 @@
-package com.example.contactapp.entity;
+package com.hinsteny.SunSnow.entity;
 
 public class User {
 

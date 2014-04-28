@@ -22,7 +22,6 @@
   
     <div id = "mainview" ></div>
 		<script type="text/javascript">
-			
 			brite.registerDao(new brite.ContactDaoHandler("Contact"));
 			brite.registerDao(new brite.GroupDaoHandler("Group"));
 			brite.registerDao(new brite.UserDaoHandler("User"));
@@ -32,7 +31,5 @@
 				brite.display("MainView",$mainview);
 			});
 		</script>
-    
-    
   </body>
 </html>

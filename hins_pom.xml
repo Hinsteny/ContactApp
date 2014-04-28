@@ -25,28 +25,29 @@
 				<artifactId>jetty-maven-plugin</artifactId>
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
+					<webApp>
+						<contextPath>/contact</contextPath>
+					</webApp>
 					<connectors>
 						<connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
 							<port>8080</port>
 							<maxIdleTime>60000</maxIdleTime>
 						</connector>
-						<connector implementation="org.eclipse.jetty.server.ssl.SslSocketConnector">
-							<port>8443</port>
-							<maxIdleTime>60000</maxIdleTime>
-							<Acceptors>2</Acceptors>
-							<AcceptQueueSize>100</AcceptQueueSize>
-							<keystore>${basedir}/keystore</keystore>
-							<password>123456</password>
-							<keyPassword>123456</keyPassword>
-						</connector>
 					</connectors>
 				</configuration>
 			</plugin>
 
-			<!-- <plugin> <groupId>org.apache.tomcat.maven</groupId> <artifactId>tomcat7-maven-plugin</artifactId>//这里也可以使用tomcat7-maven-plugin 
-				<version>2.2</version>最新版本 <configuration> <url>http://localhost:8080/ContactApp/</url>//配置远程tomcat的路劲 
-				<username>admin</username> <password>admin</password> <uriEncoding>UTF-8</uriEncoding>//tomcat的url编码 
-				达到和修改server.xml文件一样的功能 </configuration> </plugin> -->
+			<!-- <plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>//这里也可以使用tomcat7-maven-plugin
+				<version>2.2</version>最新版本
+				<configuration>
+					<url>http://localhost:8080/ContactApp/</url>//配置远程tomcat的路劲
+					<username>admin</username>
+					<password>admin</password>
+					<uriEncoding>UTF-8</uriEncoding>//tomcat的url编码 达到和修改server.xml文件一样的功能
+				</configuration>
+			</plugin> -->
 		</plugins>
 	</build>
 
